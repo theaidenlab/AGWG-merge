@@ -13,7 +13,7 @@ Feel free to post your questions and comments at:
 ### Citations and licensing
 If you use this code or the resulting assemblies, please cite the following paper:
 
-Matthrews, B.J.\*, Dudchenko O.\*, Kingan S.\*, Koren S., Antoshechkin I., Crawford J.E., Glassford W.J., Herre M., Redmond S.N., Rose N.H., et al. (2017). *Improved Aedes aegypti mosquito reference genome assembly enables biological discovery and vector control.* bioRxiv. doi: https://doi.org/10.1101/240747.
+Matthews, B.J.\*, Dudchenko O.\*, Kingan S.\*, Koren S., Antoshechkin I., Crawford J.E., Glassford W.J., Herre M., Redmond S.N., Rose N.H., et al. (2017). *Improved Aedes aegypti mosquito reference genome assembly enables biological discovery and vector control.* bioRxiv. doi: https://doi.org/10.1101/240747.
 
 #### This software is distributed under The MIT License (MIT).
 [3D-DNA pipeline (Dudchenko et al., Science, 2017)]: <http://science.sciencemag.org/content/356/6333/92>
