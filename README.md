@@ -11,9 +11,14 @@ Feel free to post your questions and comments at:
 
 
 ### Citations and licensing
-If you use this code or the resulting assemblies, please cite the following paper:
+If you use AaegL5 or any of the intermediate assembly results in your work, please cite the following paper:
 
-Matthews, B.J.\*, Dudchenko O.\*, Kingan S.\*, Koren S., Antoshechkin I., Crawford J.E., Glassford W.J., Herre M., Redmond S.N., Rose N.H., et al. (2017). *Improved Aedes aegypti mosquito reference genome assembly enables biological discovery and vector control.* bioRxiv. doi: https://doi.org/10.1101/240747.
+Matthews, B.J.,\* Dudchenko O.,\* Kingan S.,\* Koren S., Antoshechkin I., Crawford J.E., Glassford W.J., Herre M., Redmond S.N., Rose N.H., et al. (2017). *Improved Aedes aegypti mosquito reference genome assembly enables biological discovery and vector control.* bioRxiv. doi: https://doi.org/10.1101/240747.
+
+For Hi-C assembly methods please cite:
+
+Dudchenko, O., Batra, S.S., Omer, A.D., Nyquist, S.K., Hoeger, M., Durand, N.C., Shamim, M.S., Machol, I., Lander, E.S., Aiden, A.P., et al. (2017). *De novo assembly of the Aedes aegypti genome using Hi-C yields chromosome-length scaffolds.* Science. Apr 7;356(6333):92-95. doi: 10.1126/science.aal3327. Epub 2017 Mar 23.
+
 
 #### This software is distributed under The MIT License (MIT).
 [3D-DNA pipeline (Dudchenko et al., Science, 2017)]: <http://science.sciencemag.org/content/356/6333/92>
