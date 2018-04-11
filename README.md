@@ -17,7 +17,7 @@ Matthews, B.J.,\* Dudchenko O.,\* Kingan S.,\* Koren S., Antoshechkin I., Crawfo
 
 For Hi-C assembly methods please cite:
 
-Dudchenko, O., Batra, S.S., Omer, A.D., Nyquist, S.K., Hoeger, M., Durand, N.C., Shamim, M.S., Machol, I., Lander, E.S., Aiden, A.P., et al. (2017). *De novo assembly of the Aedes aegypti genome using Hi-C yields chromosome-length scaffolds.* Science. Apr 7;356(6333):92-95. doi: 10.1126/science.aal3327. Epub 2017 Mar 23.
+Dudchenko, O., Batra, S.S., Omer, A.D., Nyquist, S.K., Hoeger, M., Durand, N.C., Shamim, M.S., Machol, I., Lander, E.S., Aiden, A.P., et al. (2017). *De novo assembly of the Aedes aegypti genome using Hi-C yields chromosome-length scaffolds.* Science. Apr 7; 356(6333):92-95. doi: https://doi.org/10.1126/science.aal3327. Epub 2017 Mar 23.
 
 
 #### This software is distributed under The MIT License (MIT).
