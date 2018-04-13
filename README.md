@@ -235,7 +235,7 @@ The Hi-C chromosomal scaffolds from Step 7 have been then polished and gap-fille
 
 For details on how to run the Juicer pipeline see the [Juicer GitHub page](https://github.com/theaidenlab/juicer) and [Wiki](https://github.com/theaidenlab/juicer/wiki).
 
-Explore the genome-wide contact map [mega.hic](https://www.dropbox.com/s/33tcu35du01j78b/inter.hic?dl=0) via http://bit.ly/2JGNmSN. This interactive heatmap indicates the frequency of contacts between pairs of loci in AaegL5 at multiple resolutions as measured by three Hi-C experiments conducted for this study, on a scale from white to red; pure white indicates no observed contacts, whereas pure red indicates a maximum number of contacts (indicated in the top left corner). By default the genome-wide map is shown; by zooming in and scrolling readers can explore the complete, genome-wide data for each of the three chromosomes.
+Explore the genome-wide contact map [mega.hic](https://www.dropbox.com/s/33tcu35du01j78b/inter.hic?dl=0) via http://bit.ly/2JGNmSN. This interactive heatmap indicates the frequency of contacts between pairs of loci in AaegL5 at multiple resolutions as measured by three Hi-C experiments conducted for this study, on a scale from white to red; pure white indicates no observed contacts, whereas pure red indicates a maximum number of contacts (indicated in the top left corner). By default the genome-wide map is shown; by zooming in and scrolling readers can explore the complete, genome-wide data for each of the three chromosomes of *A. aegypti*.
 
 ### Citations and licensing
 If you use AaegL5 or any of the intermediate assembly results in your work, please cite the following paper:
