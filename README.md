@@ -41,7 +41,7 @@ ln -sf AGWG.draft.mnd.txt AGWG.mnd.txt
 bash ${path_to_3ddna}/visualize/run-assembly-visualizer.sh -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 AGWG.draft.assembly AGWG.mnd.txt
 ```
 ```sh
-# generate supplementary Hi-C maps to visualize draft with mapq>=0 and mapq>=30:
+# generate supplementary Hi-C maps to visualize draft with mapq>=0 and mapq>=30
 bash ${path_to_3ddna}/visualize/run-assembly-visualizer.sh -q 0 -m temp.AGWG.draft.asm_mnd.txt -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 AGWG.draft.assembly AGWG.mnd.txt
 bash ${path_to_3ddna}/visualize/run-assembly-visualizer.sh -q 30 -m temp.AGWG.draft.asm_mnd.txt -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 -c AGWG.draft.assembly AGWG.mnd.txt
 ```
@@ -64,12 +64,12 @@ ln -sf AGWG.mnd.txt AGWG.mnd.0.txt
 bash ${path_to_3ddna}/scaffold/run-liger-assembler.sh -s 20000 AGWG.0.cprops AGWG.mnd.0.txt
 ```
 ```sh
-# build high-resolution hic map with mapq >= 1 (default):
+# build high-resolution hic map with mapq >= 1 (default)
 bash ${path_to_3ddna}/visualize/run-asm-visualizer.sh -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 AGWG.0.cprops AGWG.0.asm AGWG.mnd.0.txt
 ```
 ```sh
-# build supplementary high-resolution hic maps with reads mapping quality >=0 and >=30.
-bash ${path_to_3ddna}/visualize/run-asm-visualizer.sh -q 0 -m temp.AGWG.0.asm_mnd.txt -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 -c AGWG.0.cprops AGWG.0.asm AGWG.mnd.0.txt
+# build supplementary high-resolution hic maps with reads mapping quality >=0 and >=30
+bash ${path_to_3ddna}/visualize/run-asm-visualizer.sh -q 0 -m temp.AGWG.0.asm_mnd.txt -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 AGWG.0.cprops AGWG.0.asm AGWG.mnd.0.txt
 bash ${path_to_3ddna}/visualize/run-asm-visualizer.sh -q 30 -m temp.AGWG.0.asm_mnd.txt -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 -c AGWG.0.cprops AGWG.0.asm AGWG.mnd.0.txt
 ```
 ##### Step 2: Curated misjoin correction
@@ -100,12 +100,12 @@ bash ${path_to_3ddna}/edit/edit-mnd-according-to-new-cprops.sh AGWG.1.cprops AGW
 bash ${path_to_3ddna}/scaffold/run-liger-assembler.sh -s 20000 AGWG.1.cprops AGWG.mnd.1.txt
 ```
 ```sh
-# build high-resolution hic map with mapq >= 1 (default):
+# build high-resolution hic map with mapq >= 1 (default)
 bash ${path_to_3ddna}/visualize/run-asm-visualizer.sh -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 AGWG.1.cprops AGWG.1.asm AGWG.mnd.1.txt
 ```
 ```sh
-# build supplementary high-resolution hic maps with reads mapping quality >=0 and >=30.
-bash ${path_to_3ddna}/visualize/run-asm-visualizer.sh -q 0 -m temp.AGWG.1.asm_mnd.txt -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 -c AGWG.1.cprops AGWG.1.asm AGWG.mnd.1.txt
+# build supplementary high-resolution hic maps with reads mapping quality >=0 and >=30
+bash ${path_to_3ddna}/visualize/run-asm-visualizer.sh -q 0 -m temp.AGWG.1.asm_mnd.txt -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 AGWG.1.cprops AGWG.1.asm AGWG.mnd.1.txt
 bash ${path_to_3ddna}/visualize/run-asm-visualizer.sh -q 30 -m temp.AGWG.1.asm_mnd.txt -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 -c AGWG.1.cprops AGWG.1.asm AGWG.mnd.1.txt
 ```
 ##### Step 4: Curated polishing and chromosome splitting
@@ -116,7 +116,7 @@ The assembly from step 3 was manually polished using Juicebox Assembly Tools to 
 
 Commands used to generate the above files are as follows:
 ```sh
-# preliminary
+# prep
 ln -sf AGWG.1.review.assembly AGWG.rawchrom.assembly
 awk -f ${path_to_3ddna}/utils/convert-assembly-to-cprop-and-asm.awk AGWG.rawchrom.assembly
 bash ${path_to_3ddna}/edit/edit-mnd-according-to-new-cprops.sh AGWG.rawchrom.cprops AGWG.mnd.txt > AGWG.mnd.rawchrom.txt
@@ -126,7 +126,7 @@ bash ${path_to_3ddna}/edit/edit-mnd-according-to-new-cprops.sh AGWG.rawchrom.cpr
 bash ${path_to_3ddna}/visualize/run-assembly-visualizer.sh -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 AGWG.rawchrom.assembly AGWG.mnd.rawchrom.txt
 ```
 ```sh
-# generate supplementary Hi-C maps to visualize pre-merge assembly with mapq>=0 and mapq>=30:
+# generate supplementary Hi-C maps to visualize pre-merge assembly with mapq>=0 and mapq>=30
 bash ${path_to_3ddna}/visualize/run-assembly-visualizer.sh -q 0 -m temp.AGWG.rawchrom.asm_mnd.txt -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 AGWG.rawchrom.assembly AGWG.mnd.rawchrom.txt
 bash ${path_to_3ddna}/visualize/run-assembly-visualizer.sh -q 30 -m temp.AGWG.rawchrom.asm_mnd.txt -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 -c AGWG.rawchrom.assembly AGWG.mnd.rawchrom.txt
 ```
@@ -174,22 +174,18 @@ The automatically identified merge groups from Step 5 have been curated using As
 
 Commands relevant to this step are as follows:
 ```sh
-# visualize curated assembly results
+# prep
 awk -f ${path_to_3ddna}/utils/convert-assembly-to-cprops-and-asm.awk AGWG.rawchrom_tiled.curated.assembly
-bash ${path_to_3ddna}/edit/edit-mnd-according-to-new-cprops.sh AGWG.1.cprops AGWG.mnd.txt > AGWG.mnd.1.txt
+bash ${path_to_3ddna}/edit/edit-mnd-according-to-new-cprops.sh AGWG.rawchrom_tiled.curated.cprops AGWG.mnd.txt > AGWG.rawchrom_tiled.curated.txt
 ```
 ```sh
-# order and orient scaffolds larger than 20000
-bash ${path_to_3ddna}/scaffold/run-liger-assembler.sh -s 20000 AGWG.1.cprops AGWG.mnd.1.txt
+# build high-resolution hic map with mapq >= 1 (default)
+bash ${path_to_3ddna}/visualize/run-assembly-visualizer.sh -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 AGWG.rawchrom_tiled.curated.assembly AGWG.rawchrom_tiled.curated.txt
 ```
 ```sh
-# build high-resolution hic map with mapq >= 1 (default):
-bash ${path_to_3ddna}/visualize/run-asm-visualizer.sh -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 AGWG.1.cprops AGWG.1.asm AGWG.mnd.1.txt
-```
-```sh
-# build supplementary high-resolution hic maps with reads mapping quality >=0 and >=30.
-bash ${path_to_3ddna}/visualize/run-asm-visualizer.sh -q 0 -m temp.AGWG.1.asm_mnd.txt -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 -c AGWG.1.cprops AGWG.1.asm AGWG.mnd.1.txt
-bash ${path_to_3ddna}/visualize/run-asm-visualizer.sh -q 30 -m temp.AGWG.1.asm_mnd.txt -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 -c AGWG.1.cprops AGWG.1.asm AGWG.mnd.1.txt
+# build supplementary high-resolution hic maps with reads mapping quality >=0 and >=30
+bash ${path_to_3ddna}/visualize/run-asm-visualizer.sh -q 0 -m temp.AGWG.rawchrom_tiled.curated.asm_mnd.txt -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 AGWG.rawchrom_tiled.curated.assembly AGWG.rawchrom_tiled.curated.txt
+bash ${path_to_3ddna}/visualize/run-asm-visualizer.sh -q 30 -m temp.AGWG.rawchrom_tiled.curated.asm_mnd.txt -r 2500000,1000000,500000,250000,100000,50000,25000,10000,5000,1000,500 -c AGWG.rawchrom_tiled.curated.assembly AGWG.rawchrom_tiled.curated.txt
 ```
 For interactive review of this step see http://bit.ly/2JLGzaq. This shows the [AGWG.rawchrom_tiled.review_0.hic](https://www.dropbox.com/s/9fa2aoa6twe2g7j/AGWG.rawchrom_tiled.review_0.hic?dl=0) with [AGWG.rawchrom_tiled.review_asm.scaffold_track.txt](https://www.dropbox.com/s/bgq4bg39tnyatts/AGWG.rawchrom_tiled.review_asm.scaffold_track.txt?dl=0) boundary annotations along the diagonal. The heatmap indicates the frequency of contact between pairs of loci as measured by the Hi-C experiment, on a scale from white to red, and the square annotations along the diagonal indicate the ordering and orientation of contigs after tiling curation. By default, the map shows the neighborhood of the same contigs that have been the focus of [interactive illustration for Step 6](http://bit.ly/2JIu3Z7); by scrolling readers can explore the complete, genome-wide data and annotations.
 ##### Step 7: Automatic merging of overlapping contigs
@@ -201,7 +197,7 @@ Merging of chained sequences was performed iteratively by the 3D-DNA merge modul
 
 To reproduce the above files see the following commands:
 ```sh
-# create new contigs/scaffolds by merging connected components defined in the tiled assembly file
+# create new haploid contigs by merging connected components defined in the tiled assembly file
 bash ${path_to_3ddna}/merge/merge-tiled-asm.sh -a AGWG.rawchrom_tiled.review_asm.scaffold_track.txt AGWG.rawchrom.cprops AGWG.rawchrom_tiled.review.asm faSplit
 ```
 ```sh
