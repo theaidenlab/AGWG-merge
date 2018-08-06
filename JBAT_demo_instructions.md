@@ -8,7 +8,7 @@ The compiled software can be downloaded from https://github.com/theaidenlab/juic
 
 The source code is shared at https://github.com/theaidenlab/Juicebox. The code includes a README listing System requirements, download guide and instruction for use.
 
-For a quick start guide on the Assembly Tools Module, please see [this tutorial video](https://www.youtube.com/watch?v=Nj7RhQZHM18). The tutorial demonstrates how to use Juicebox Assembly Tools in the context of a demo problem (see also the Juicebox Assembly Tools preprint [[1]](https://www.biorxiv.org/content/early/2018/01/28/254797), figure 2).
+For a quick start guide on the Assembly Tools Module, please see [this tutorial video](https://www.youtube.com/watch?v=Nj7RhQZHM18). The tutorial demonstrates how to use Juicebox Assembly Tools in the context of a demo problem (see also the Juicebox Assembly Tools preprint [[1]](https://www.biorxiv.org/content/early/2018/01/28/254797), figure 2 caption and discussion).
 
 The demo data files can be found [here](https://www.dropbox.com/s/13cppe80692oee9/demo.zip?dl=0). The shared *.zip* archive contains two files: *figure_2.hic* and *figure_2.assembly*. The tutorial video covers opening the two demo files in the compiled version of the software, provides operation instructions and displays expected output. The run time for the demo problem is 8 minutes on a “normal” desktop computer. We recommend computers running a Macintosh Operating System.
 
